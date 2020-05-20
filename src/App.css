@@ -16,7 +16,7 @@
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
+  top: fl-displayex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -35,4 +35,173 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+ul {  /* autoprefixer: off */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  grid-auto-rows: 80px;
+  grid-auto-flow: dense; 
+  clip-path: polygon();
+  background: #1C1B1B;
+  box-sizing: border-box;
+  clip-path: polygon(10px 6px, calc(100% - 7px) 6px, calc(100% - 7px) calc(100% - 6px), 10px calc(100% - 6px));
+}
+
+ul, li {
+  border: 6px solid black;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  justify-content: center;
+}
+
+.box-label {
+  font-size: 1.5em;
+  color: #1C1B1B;;
+}
+.header {
+  height: 14vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 1vh;
+}
+
+.single-box-pane {
+  height: 10vh;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 6px solid black;
+  margin: 1vh;
+}
+  
+.color-pane {
+  margin: 1vh;
+  height: 5vh;
+  width: 5vh;
+  border: 2px solid black;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.viewer {
+  width: 80vw;
+  height: 83vh;
+  overflow: scroll;
+  margin-bottom: 1vh;
+}
+
+.editor {
+  border: 6px solid black;
+  width: 17vw;
+  height: 81vh;
+  margin-left: 1vw;
+  margin-bottom: 1vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.grid-options {
+  height: 40%;
+  width: 75%;
+  padding: 1vw;
+  border: 2px solid black;
+}
+
+.box-options {
+  height: 40%;
+  width: 75%;
+  padding: 1vw;
+  border: 2px solid black;
+}
+
+/* Color classes located below */
+.steelblue {
+  background-color: steelblue;
+}
+.cadetblue {
+  background-color: cadetblue;  
+}
+.lightcyan {
+  background-color: lightcyan;  
+}
+.lightgoldenrodyellow {
+  background-color: lightgoldenrodyellow;  
+}
+.khaki {
+  background-color: khaki;  
+}
+.palegreen {
+  background-color: palegreen;  
+}
+.seagreen {
+  background-color: seagreen;  
+}
+.lightsalmon {
+  background-color: lightsalmon;  
+}
+.tomato {
+  background-color: tomato;  
+}
+.darkorchid {
+  background-color: darkorchid;  
+}
+.sienna {
+  background-color: sienna;  
+}
+.peru {
+  background-color: peru;  
+}
+.slategrey {
+  background-color: slategrey;  
+}
+.floralwhite {
+  background-color: floralwhite;  
+}
+
+/* Row classes located below */
+.rowone {
+  grid-row: span 1;
+}
+.rowtwo {
+  grid-row: span 2;
+}
+.rowthree {
+  grid-row: span 3;
+}
+.rowfour {
+  grid-row: span 4;
+}
+.rowfive {
+  grid-row: span 5;
+}
+
+/* Column classes located below */
+.columnone {
+  grid-column: span 1;
+}
+.columntwo {
+  grid-column: span 2;
+}
+.columnthree {
+  grid-column: span 3;
+}
+.columnfour {
+  grid-column: span 4;
+}
+.columnfive {
+  grid-column: span 5;
 }
